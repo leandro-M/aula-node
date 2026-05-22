@@ -45,3 +45,9 @@ export const atualizarAluno = async (req, res) => {
     }, { new: true });
     return res.status(200).json(aluno);
 }
+
+export const buscarAlunoPorId = async (req, res) => {
+    const { id } = req.params;
+    const aluno = await Aluno.findById(id)
+    return res.status(200).json(aluno);
+}
