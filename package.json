@@ -4,13 +4,15 @@
   "description": "Exemplos de utilizacao do nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "leandro-M",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.2.1"
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
